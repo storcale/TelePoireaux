@@ -1,0 +1,16 @@
+/**
+ * 
+ * We get the nearest Leek entity (enemy)
+ * 
+**/
+
+function getEnemy() {
+
+  //We loop for all the enemiess
+	for(var id = 0; id <= count(getEnemies()); id++) {
+		if (getType(getEnemies()[id]) == ENTITY_LEEK) {
+			return getEnemies()[id]	
+		}
+	}
+	return getNearestEnemy()
+}
