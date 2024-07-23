@@ -10,19 +10,19 @@ function bulbAi() {
 	var bulb = getSummons(moi)[0]
 	
 	if (isBulbHealer) {
-		var leekToHeal = moi
-		if (getFightType() == FIGHT_TYPE_TEAM) leekToHeal = getLowAlly()
-		
-		useAChip(CHIP_BANDAGE, leekToHeal)
-		useAChip(CHIP_CURE, leekToHeal)
+		var leekToHeal = moi /** It's a variable that get the current leek ( getEntity() ) **/
+		if (getFightType() == FIGHT_TYPE_TEAM) leekToHeal = getLowAlly() /** See the snippet getAllyWithTheLowestPourcentOfLife **/
 
-		useAChip(CHIP_HELMET, leekToHeal)
+		useChip(CHIP_BANDAGE, leekToHeal)
+		useChip(CHIP_CURE, leekToHeal)
+
+		useChip(CHIP_HELMET, leekToHeal)
 		moveToward(leekToHeal)
 	} else {
-		useAChip(CHIP_ROCK, enemy)
-		useAChip(CHIP_PROTEIN, moi)
-		useAChip(CHIP_FLAME, enemy)
-		useAChip(CHIP_SPARK, enemy)
+		useChip(CHIP_ROCK, enemy)
+		useChip(CHIP_PROTEIN, moi)
+		useChip(CHIP_FLAME, enemy)
+		useChip(CHIP_SPARK, enemy)
 	}
 }
 
