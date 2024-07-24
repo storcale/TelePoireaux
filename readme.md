@@ -9,5 +9,5 @@ Retrouvez de bouts de code pour avoir des poireaux plus efficace !
 - [getSafeCells+GetAttackingCells](https://github.com/storcale/TelePoireaux/blob/main/snippets/TactiqueSafe%2BAttaque.js) : Donne des cells ou l'ennemi ne pourra pas vous toucher au prochain tour et des cases ou vous pouvez attaquer l'ennemi
 - [tathanBulbAi](https://github.com/storcale/TelePoireaux/blob/main/snippets/tathanBulbAi.ls) : Une "IA" (Merci Pierre) simple utilisé par le Leak TATHAN
 
-## Contribué au repo
+## Contribur au repo
 Veuillez lire ce fichier : [CONTRIBUTE.MD](https://github.com/storcale/TelePoireaux/blob/main/CONTRIBUTE.md) 
