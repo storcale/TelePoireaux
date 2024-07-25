@@ -18,7 +18,7 @@ function cases(cell,n){
 	var y=getCellY(cell)
 	for(var i=x-n;i<=x+n;i++){
 	for(var j=y-n;j<=y+n;j++){
-	if(abs(x-i)+abs(y-j)<=n and isEmptyCell(getCellFromXY(i,j))){
+	if(abs(x-i)+abs(y-j)<=n and isEmptyCell(getCellFromXY(i,j)) && getCellFromXY(i,j) != null){
 	var l=getPathLength(getCellFromXY(i,j),cell,[getCell()])
 	if(l<=n and l>0){
 	insert(tab,getCellFromXY(i,j),-1)
