@@ -49,3 +49,7 @@ if (100 * getLife() / getTotalLife() < 50) {
 	useChip(CHIP_SHIELD, ally)
 
 }
+
+/** Attack **/
+useChip(CHIP_VENOM,enemy)
+useChip(CHIP_THORN,enemy)
